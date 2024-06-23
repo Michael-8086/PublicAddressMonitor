@@ -12,7 +12,7 @@ public class IpifyAddressService : IPublicAddressService
 
     public async Task<string> GetPublicAddress()
     {
-        var publicAddress = await _client.GetStringAsync(_client.BaseAddress);
+        var publicAddress = await _client.GetStringAsync("");
 
         return publicAddress;
     }
